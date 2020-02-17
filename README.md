@@ -21,7 +21,9 @@ This exercise provides a "thing" REST API.
 
 ## Deployment
 
-TODO
+To deploy as a Docker container:
+- Build the container image: `docker image build -t devops-exercise:1.0`
+- Run the image: `docker container run --publish 5000:5000 --detach --name devops-exercise devops-exercise:1.0`
 
 ## Testing
 
