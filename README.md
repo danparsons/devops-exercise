@@ -26,7 +26,13 @@ To deploy as a Docker container:
 - Run the image: `docker container run --publish 5000:5000 --detach --name devops-exercise devops-exercise:1.0`
 
 ## Testing
+If running as a Docker container (detailed above):
+- `docker exec -it devops-exercise python -m unittest`
 
+Example curl-based query:
+- Retrieve the first *thing*: `curl http://localhost:5000/things/1`
+
+If running locally:
 - Run `python tests.py`
 
 ## Credits
